@@ -83,15 +83,81 @@ The dataset used contains transactional data from an online retail store. The ma
 2. **Inventory Optimization**: Align stock levels with high-performing months to reduce wastage and increase profitability.
 3. **Overstock Management**: Develop discount strategies or bundle offers for overstocked products.
 
-## License
+# project-2
+# # E-commerce Return Rate Reduction Analysis
+# Ad Campaign Analysis
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+## Objective
+Analyze ad campaign performance metrics to derive actionable insights, focusing on CTR (Click Through Rate), CPC (Cost Per Click), and demographic-based performance trends.
 
-## Contributing
+## Dataset Overview
+The dataset contains 1,143 entries with attributes such as:
+- **ad_id**: Unique ID for each ad.
+- **xyz_campaign_id**: Campaign identifier.
+- **fb_campaign_id**: Facebook campaign identifier.
+- **age**: Target audience age group.
+- **gender**: Gender of the target audience.
+- **interest**: Interest category of the audience.
+- **Impressions**: Number of times the ad was displayed.
+- **Clicks**: Number of clicks received.
+- **Spent**: Total ad spend in USD.
+- **Total_Conversion**: Total number of actions taken.
+- **Approved_Conversion**: Number of approved conversions.
 
-Contributions are welcome! Please feel free to submit a pull request or open an issue.
+## Tools & Technologies
+- **Python**: Data cleaning, feature engineering, and visualization.
+- **Libraries**: Pandas, Seaborn, Matplotlib.
 
----
+## Key Features Engineered
+1. **Click Through Rate (CTR)**:
+   
+   Formula: `CTR = Clicks / Impressions`
+   
+   - Measures ad effectiveness in generating clicks.
 
-### Contact
-For questions or suggestions, feel free to reach out via email: your.email@example.com.
+2. **Cost Per Click (CPC)**:
+   
+   Formula: `CPC = Spent / Clicks`
+   
+   - Calculates the average cost incurred per click.
+
+## Visualizations Included
+1. **Distribution of Ad Spend**:
+   - Histogram showing the spend distribution across campaigns.
+2. **CTR by Age Group**:
+   - Boxplot comparing CTR values across different age brackets.
+3. **CPC by Gender**:
+   - Bar chart analyzing CPC variations by gender.
+
+## How to Run
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/username/ad-campaign-analysis.git
+   ```
+
+2. **Prepare the Dataset**:
+   Place the dataset in the `data/` directory.
+
+3. **Run the Script**:
+   Execute the Python script for data processing and analysis:
+   ```bash
+   python scripts/data_cleaning_and_analysis.py
+   ```
+
+4. **Access Outputs**:
+   - Cleaned dataset: `data/cleaned_project_2.csv`
+   - Visualizations: Saved in `visuals/` directory.
+
+## Folder Structure
+```
+|-- README.md
+|-- data/
+|   |-- project_2.csv
+|   |-- cleaned_project_2.csv
+|-- scripts/
+|   |-- data_cleaning_and_analysis.py
+|-- visuals/
+|   |-- ad_spend_distribution.png
+|   |-- ctr_by_age_group.png
+|   |-- cpc_by_gender.png
+```
